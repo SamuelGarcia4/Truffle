@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>View All Contacts</title>
+ <!-- Latest compiled and minified CSS & JS -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+ <script src="https://code.jquery.com/jquery.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+ <div class="container">
+   <div class="jumbotron">
+     <h1>View All Contacts</h1>
+     <h3>A complete list of all people who submitted their information.</h3>
+   </div>
+   <div class="row">
+
+       <div class="panel panel-default">
+         <div class="panel-heading">
+           <h3 class="panel-title"><strong>Contact List</strong></h3>
+         </div>
+         <div class="panel-body">
+           <div class="well">
+             <h2 id="name">Charlotte Henneger</h2>
+             <div id="stats">
+               <h3><strong>Email:</strong> <span id="role">chenneger@gmail.com</span></h3>
+               <h3><strong>Phone:</strong> <span id="age">385-365-8791</span></h3>
+               <h3><strong>Question:</strong> <span id="force-points">Hey, I was looking at your list of truffels and I noticed that there isn't a price
+                 for your royal black truffels from New York. What are those prices? Thanks for your help.
+               </span></h3>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+
+ <!-- <script type="text/javascript">
+   $("#search-btn").on("click", function() {
+     var searchedCharacter = $("#contact-search").val().trim();
+
+     // Using a RegEx Pattern to remove spaces from searchedCharacter
+     // You can read more about RegEx Patterns later https://www.regexbuddy.com/regex.html
+     searchedCharacter = searchedCharacter.replace(/\s+/g, "").toLowerCase();
+
+     $.get("/api/" + searchedCharacter, function(data) {
+       console.log(data);
+       if (data) {
+         $("#stats").show();
+         $("#nameInput").text(data.name);
+         $("#emailInput").text(data.email);
+         $("#emailInput").text(data.phone);
+         $("#question").text(data.question);
+       }
+       else {
+         $("#name").text("There is no truffle for your search.");
+         $("#stats").hide();
+       }
+     });
+   });
+ </script> -->
+</body>
+</html>
